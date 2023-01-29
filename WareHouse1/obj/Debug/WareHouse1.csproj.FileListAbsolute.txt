@@ -1,0 +1,11 @@
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\bin\Debug\WareHouse1.exe.config
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\bin\Debug\WareHouse1.exe
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\bin\Debug\WareHouse1.pdb
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\obj\Debug\WareHouse1.csproj.AssemblyReference.cache
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\obj\Debug\WareHouse1.csproj.SuggestedBindingRedirects.cache
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\obj\Debug\WareHouse1.csproj.CoreCompileInputs.cache
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\obj\Debug\WareHouse1.exe
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\obj\Debug\WareHouse1.pdb
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\bin\Debug\EntityFramework.dll
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\bin\Debug\EntityFramework.xml
+C:\Users\TUAN TAM\OneDrive\Máy tính\ASP.NET\Project\WareHouse1\obj\Debug\WareHouse1.csproj.CopyComplete
