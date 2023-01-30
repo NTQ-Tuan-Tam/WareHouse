@@ -15,7 +15,7 @@ namespace WareHouse1.Controller
             Console.WriteLine("=== Menu Management===");
             Console.WriteLine("[1].Management Product");
             Console.WriteLine("[2].Management  Category Product ");
-            Console.WriteLine("[3].Management WareHose");
+            Console.WriteLine("[3].Management WareHouse");
            
         }
 

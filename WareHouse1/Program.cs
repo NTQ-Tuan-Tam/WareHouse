@@ -28,9 +28,9 @@ namespace WareHouse1
                     case "1":
                         ProductManagement _product = new ProductManagement();
                         _product.ManagementProduct();
-                        var option = Console.ReadLine();
+                        var option1 = Console.ReadLine();
 
-                        switch (option.ToUpper())
+                        switch (option1.ToUpper())
                         {
                             case "1":
                                 _product.ShowListProduct();
@@ -59,22 +59,18 @@ namespace WareHouse1
 
                         break;
                     case "2":
+                        CategoriesManagement _Category = new CategoriesManagement();
+                        _Category.CartegoryManagrnt();
+                        var option2 = Console.ReadLine();
+                        switch (option2.ToUpper())
+                        {
+                            case "1":
+                                _Category.ListCartegory();
+                                break;
+                        }
 
-                    //case "2":
-                    //    _productManagement.AddNew();
-                    //    break;
-                    //case "3":
-                    //    _productManagement.Update();
-                    //    break;
-                    //case "4":
-                    //    _productManagement.ShowDetail();
-                    //    break;
-                    //case "5":
-                    //    _productManagement.Delete();
-                    //    break;
-                    //case "Q":
-                    //    loop = false;
-                    //    break;
+
+                         break;
                     default:
                         Console.WriteLine("Invalid selection!");
                         Console.ReadKey();

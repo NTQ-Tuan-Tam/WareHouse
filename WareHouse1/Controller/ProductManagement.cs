@@ -59,7 +59,7 @@ namespace WareHouse1.Controller
                         sdr["Color"] + "    " + 
                         sdr["Price"] + "      " +
                         sdr["Stok"]+ "       " + 
-                        sdr["NameCategory"] + "       " + 
+                        sdr["NameCategory"] + "        " + 
                         sdr["WareHouse1"] + "    " +
                         sdr["Address"]);
                 }
