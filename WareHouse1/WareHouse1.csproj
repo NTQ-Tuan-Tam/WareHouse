@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\CategoriesManagement.cs" />
     <Compile Include="Controller\Management.cs" />
     <Compile Include="Controller\ProductManagement.cs" />
     <Compile Include="Models\Category.cs">

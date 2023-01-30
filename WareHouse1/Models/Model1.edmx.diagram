@@ -7,7 +7,7 @@
       <Diagram DiagramId="3924270a966741079ee100bbd3c3c739" Name="Diagram1">
         <EntityTypeShape EntityType="WareHouseModel.Category" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="WareHouseModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="WareHouseModel.sysdiagram" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WareHouseModel.sysdiagram" Width="1.5" PointX="11.125" PointY="2.25" IsExpanded="true" />
         <EntityTypeShape EntityType="WareHouseModel.WareHouse" Width="1.5" PointX="6.625" PointY="2.25" IsExpanded="true" />
         <AssociationConnector Association="WareHouseModel.FK_Product_Category" ManuallyRouted="false" />
         <AssociationConnector Association="WareHouseModel.FK_Product_WareHouse" ManuallyRouted="false" />
