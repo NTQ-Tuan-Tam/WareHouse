@@ -54,6 +54,7 @@
     <Compile Include="Controller\CategoriesManagement.cs" />
     <Compile Include="Controller\Management.cs" />
     <Compile Include="Controller\ProductManagement.cs" />
+    <Compile Include="Controller\WareHouseManagement.cs" />
     <Compile Include="Models\Category.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

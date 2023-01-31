@@ -67,10 +67,40 @@ namespace WareHouse1
                             case "1":
                                 _Category.ListCartegory();
                                 break;
+                            case "2":
+                                _Category.GroupCategory();
+                                break;
+                            case "3":
+                                _Category.AddCartegory();
+                                break;
+                            case "4":
+                                _Category.DeLeteCartegory();
+                                break;
                         }
+                        break;
+                    case"3":
+                        WareHouseManagement WareHouse = new WareHouseManagement();
+                        WareHouse.WareHouseOption();
+                        var WareHouseOption = Console.ReadLine();
+                        switch (WareHouseOption.ToUpper())
+                        {
+                            case"1":
+                                WareHouse.ListWarehouse();
+                                break;
+                            case "2":
+                                WareHouse.ListGroupAddressWarehouse();
+                                break;
+                            case "3":
+                                WareHouse.AddWareHouse();
+                                break;
+                            case "4":
+                                WareHouse.DeleteWareHouse();
+                                break;
+
+                        }
+                        break;
 
 
-                         break;
                     default:
                         Console.WriteLine("Invalid selection!");
                         Console.ReadKey();
