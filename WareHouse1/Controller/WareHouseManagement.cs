@@ -20,6 +20,7 @@ namespace WareHouse1.Controller
             Console.WriteLine("[2]:List Group Address Warehouse");
             Console.WriteLine("[3]:Add Warehouse");
             Console.WriteLine("[4]:Delete Warehouse");
+            Console.WriteLine("[Q]:Quit WareHouse");
         }
         public void ListWarehouse() 
         {
@@ -98,5 +99,6 @@ namespace WareHouse1.Controller
             dbcontex.Close();
             Console.WriteLine("Delete sucsess ! ");
         }
+        
     }
 }

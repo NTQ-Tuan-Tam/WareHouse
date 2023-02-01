@@ -30,7 +30,7 @@ namespace WareHouse1.Controller
         
         public void ShowListProduct()
         {
-            Console.WriteLine("ListProduct");
+            Console.WriteLine("=== ListProduct ===");
             SqlConnection dbcontext = new SqlConnection();
 
             Console.WriteLine($"{"ID", -15}{"NamePrduct", -20}{"Color",-10}{"Price",-10}{"Stok",-10}{"Category", -15}{"WareHouse",-15}{"Address",-10}");
@@ -73,10 +73,14 @@ namespace WareHouse1.Controller
             var price = Helper.InputFloatNumber();
             Console.Write("Input stokl: ");
             var stok = Helper.InputFloatNumber();
-            Console.Write("Input IDCategory: ");
-            var idcategoey = Helper.InputFloatNumber();
-            Console.Write("Input IDWareHosue: ");
-            var idWareHouse = Helper.InputFloatNumber();
+            CategoriesManagement categories = new CategoriesManagement();
+            categories.ListCartegory();
+            Console.Write("Input ID Category: ");
+            var idcategoey = Helper.InputIntNumber();
+            WareHouseManagement wareHouseManagement= new WareHouseManagement();
+            wareHouseManagement.ListWarehouse();
+            Console.Write("Input ID WareHosue: ");
+            var idWareHouse = Helper.InputIntNumber();
            
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["WareHouseEntities"].ConnectionString;
@@ -109,12 +113,16 @@ namespace WareHouse1.Controller
             var price = Helper.InputFloatNumber();
             Console.Write("Input stokl: ");
             var stok = Helper.InputFloatNumber();
-            Console.Write("Input IDCategory: ");
-            var idcategoey = Helper.InputFloatNumber();
-            Console.Write("Input IDWareHosue: ");
-            var idWareHouse = Helper.InputFloatNumber();
-            
-            
+            CategoriesManagement categories = new CategoriesManagement();
+            categories.ListCartegory();
+            Console.Write("Input ID Category: ");
+            var idcategoey = Helper.InputIntNumber();
+            WareHouseManagement wareHouseManagement = new WareHouseManagement();
+            wareHouseManagement.ListWarehouse();
+            Console.Write("Input ID WareHosue: ");
+            var idWareHouse = Helper.InputIntNumber();
+
+
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["WareHouseEntities"].ConnectionString;
             connection.Open();
@@ -143,11 +151,10 @@ namespace WareHouse1.Controller
             
             SqlConnection dbcontext = new SqlConnection();
 
-            
-
             dbcontext.ConnectionString = ConfigurationManager.ConnectionStrings["WareHouseEntities"].ConnectionString;
             try
             {
+                ShowListProduct();
                 Console.WriteLine("Nhap ID Detail Product: ");
                 var IDProduct = Helper.InputFloatNumber();
                 Console.WriteLine($"{"ID",-10}{"NameProduct",-15}{"Color",-10}{"Price",-10}{"Stok",-10}{"IDCategory",-15}{"IDWareHouse",-10}");
@@ -157,8 +164,8 @@ namespace WareHouse1.Controller
                                                      "ON P.IDCategory = C.ID " +
                                                      "INNER JOIN WareHouses AS W  " +
                                                      "ON P.IDWareHouse = W.ID " +
-                                                     "Where IDProduct = @IDProduct ", dbcontext);
-                query.Parameters.AddWithValue("@IDproduct", IDProduct);//chuyen gia tri 
+                                                     "WHERE IDProduct = @IDProduct ", dbcontext);
+                query.Parameters.AddWithValue("@IDProduct", IDProduct);//chuyen gia tri 
                 dbcontext.Open();
                 SqlDataReader sdr = query.ExecuteReader();
                 while (sdr.Read())
@@ -203,5 +210,6 @@ namespace WareHouse1.Controller
                 dbcontext.Close();
             }
         }
+       
     }
 }

@@ -22,6 +22,7 @@ namespace WareHouse1.Controller
             Console.WriteLine("[2]:ListGroupCategory");
             Console.WriteLine("[3]:AddCategory");
             Console.WriteLine("[4]:DeleteCategory");
+            Console.WriteLine("[Q]:Quit");
         }
         public void ListCartegory()
         {
